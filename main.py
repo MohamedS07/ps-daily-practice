@@ -71,7 +71,14 @@ def space_remove (content):
 space_remove('hello world')
 space_remove('Welcome to the world')
 
-# Write a Python program that asks the user to enter a password and checks if it is strong. A password is considered strong if:
+#5. Write a Python program that asks the user to enter a password and checks if it is strong. A password is considered strong if:
+
+password = input("Enter your password: ")
+if len(password) >= 8 :
+    if ("!" in password or "@" in password or "#" in password or "$" in password or "%" in password or "^" in password or "&" in password or "*" in password):
+        print("Password is strong")
+    else:
+        print("Password is not strong")
 
 
 
